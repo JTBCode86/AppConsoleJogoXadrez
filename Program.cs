@@ -8,9 +8,20 @@ namespace AppConsoleJogoXadrez
     {
         static void Main(string[] args)
         {
-            PosicaoXadrez posicaoXadrez = new PosicaoXadrez('c', 7);
-            Console.WriteLine(posicaoXadrez);
-            Console.WriteLine(posicaoXadrez.ToPosisao());
+            try
+            {
+                Tabuleiro tab = new Tabuleiro(8, 8);
+                tab.colocarPeca(new Torre(tab, Cor.preta), new Posicao(0,0));
+                tab.colocarPeca(new Torre(tab, Cor.preta), new Posicao(1,3));
+                tab.colocarPeca(new Rei(tab, Cor.preta), new Posicao(0,2));
+                tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao(3,5));
+
+                Tela.imprimirTabuleiro(tab);
+            }
+            catch (TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.ReadLine();
         }
