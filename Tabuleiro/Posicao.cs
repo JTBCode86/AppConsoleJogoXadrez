@@ -1,5 +1,4 @@
-﻿
-namespace Tabuleiro
+﻿namespace tabuleiro
 {
     class Posicao
     {
@@ -18,9 +17,5 @@ namespace Tabuleiro
                 + ", " 
                 + coluna;
         }
-
-
-
-
     }
 }
