@@ -4,11 +4,17 @@ namespace Xadrez
 {
     class Rei : Peca
     {
+        #region Construtor
+
         public Rei(Tabuleiro tab, Cor cor)
             : base(tab, cor) 
         { 
 
         }
+
+        #endregion
+
+        #region Métodos
 
         private bool podeMover(Posicao pos)
         {
@@ -16,7 +22,7 @@ namespace Xadrez
             return p == null || p.cor != cor;
         }
 
-        public override bool[,] movimentosPosiveis()
+        public override bool[,] movimentosPossiveis()
         {
             bool[,] mat = new bool[tab.linhas, tab.linhas];
             Posicao pos = new Posicao(0, 0);
@@ -76,5 +82,8 @@ namespace Xadrez
         {
             return "R";
         }
+
+        #endregion
+
     }
 }

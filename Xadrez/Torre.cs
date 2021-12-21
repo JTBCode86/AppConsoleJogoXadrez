@@ -4,11 +4,17 @@ namespace Xadrez
 {
     class Torre : Peca
     {
+        #region Construtor
+
         public Torre(Tabuleiro tab, Cor cor)
            : base(tab, cor)
         {
 
         }
+
+        #endregion
+
+        #region Métodos
 
         private bool podeMover(Posicao pos) 
         {
@@ -17,7 +23,7 @@ namespace Xadrez
 
         }
 
-        public override bool[,] movimentosPosiveis() 
+        public override bool[,] movimentosPossiveis() 
         {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
             Posicao pos = new Posicao(0, 0);
@@ -76,5 +82,7 @@ namespace Xadrez
         {
             return "T";
         }
+
+        #endregion
     }
 }

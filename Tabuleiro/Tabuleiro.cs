@@ -4,11 +4,17 @@ namespace tabuleiro
 {
     class Tabuleiro
     {
+        #region Propriedades
+
         public int linhas { get; set; }
 
         public int colunas { get; set; }
 
         private Peca[,] pecas;
+
+        #endregion
+
+        #region Construtor
 
         public Tabuleiro(int linhas,int colunas) 
         {
@@ -16,6 +22,10 @@ namespace tabuleiro
             this.colunas = colunas;
             pecas = new Peca[linhas, colunas];
         }
+
+        #endregion
+
+        #region Métodos
 
         public Peca peca(int linha, int coluna) 
         {
@@ -56,7 +66,6 @@ namespace tabuleiro
             return aux;
         }
 
-
         public bool posicaoValida(Posicao pos) 
         {
             if (pos.linha<0 || pos.linha>=linhas || pos.coluna<0 || pos.coluna>=colunas)
@@ -73,5 +82,8 @@ namespace tabuleiro
                 throw new TabuleiroException("Posição Invalida!");
             }
         }
+
+        #endregion
+
     }
 }
