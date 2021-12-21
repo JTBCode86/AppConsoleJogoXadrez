@@ -20,6 +20,7 @@ namespace AppConsoleJogoXadrez
                     try
                     {
                         Console.Clear();
+                        Console.Title = "Projeto Udemy - Jogo de Xadrez";
 
                         Tela.imprimirTabuleiro(partida.tab);
                         Console.WriteLine();
