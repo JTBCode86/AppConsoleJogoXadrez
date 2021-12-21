@@ -16,9 +16,15 @@ namespace AppConsoleJogoXadrez
                     Console.Clear();
                     Tela.imprimirTabuleiro(partida.tab);
 
-                    Console.WriteLine("");
+                    Console.WriteLine();
                     Console.Write("Origem: ");
                     Posicao origem = Tela.LerPosicaoXadrez().ToPosisao();
+
+                    bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPosiveis();
+                    Console.Clear();
+                    Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
+                    Console.WriteLine();
                     Console.Write("Destino: ");
                     Posicao destino = Tela.LerPosicaoXadrez().ToPosisao();
                     partida.executaMovimento(origem, destino);

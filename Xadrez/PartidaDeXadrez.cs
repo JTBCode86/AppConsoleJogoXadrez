@@ -32,19 +32,19 @@ namespace Xadrez
 
         private void colocarPecas()
         {
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c',1).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c',2).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('d',2).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('e',2).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('e',1).ToPosisao());
-            tab.colocarPeca(new Rei(tab, Cor.Branca), new PosicaoXadrez('d',1).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new posicaoXadrez('c',1).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new posicaoXadrez('c',2).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new posicaoXadrez('d',2).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new posicaoXadrez('e',2).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new posicaoXadrez('e',1).ToPosisao());
+            tab.colocarPeca(new Rei(tab, Cor.Branca), new posicaoXadrez('d',1).ToPosisao());
 
-            tab.colocarPeca(new Torre(tab, Cor.preta), new PosicaoXadrez('c',7).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.preta), new PosicaoXadrez('c',8).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.preta), new PosicaoXadrez('d',7).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.preta), new PosicaoXadrez('e',7).ToPosisao());
-            tab.colocarPeca(new Torre(tab, Cor.preta), new PosicaoXadrez('e',8).ToPosisao());
-            tab.colocarPeca(new Rei(tab, Cor.preta), new PosicaoXadrez('d',8).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.preta), new posicaoXadrez('c',7).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.preta), new posicaoXadrez('c',8).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.preta), new posicaoXadrez('d',7).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.preta), new posicaoXadrez('e',7).ToPosisao());
+            tab.colocarPeca(new Torre(tab, Cor.preta), new posicaoXadrez('e',8).ToPosisao());
+            tab.colocarPeca(new Rei(tab, Cor.preta), new posicaoXadrez('d',8).ToPosisao());
         }
     }
 }
