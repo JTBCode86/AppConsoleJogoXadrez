@@ -21,12 +21,8 @@ namespace AppConsoleJogoXadrez
                     {
                         Console.Clear();
                         Console.Title = "Projeto Udemy - Jogo de Xadrez";
-
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada da peça " + partida.jogadorAtual);
-
+                        Tela.imprimirPartida(partida);
+                        
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.LerPosicaoXadrez().ToPosisao();
