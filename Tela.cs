@@ -41,7 +41,7 @@ namespace AppConsoleJogoXadrez
             Console.Write("Pretas: ");
             ConsoleColor aux = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            imprimirConjunto(partida.pecasCapituradas(Cor.preta));
+            imprimirConjunto(partida.pecasCapituradas(Cor.Preta));
             Console.ForegroundColor = aux;
             Console.WriteLine();
         }
@@ -129,6 +129,5 @@ namespace AppConsoleJogoXadrez
         }
 
         #endregion
-
     }
 }

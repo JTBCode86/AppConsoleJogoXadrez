@@ -3,11 +3,11 @@
     enum Cor
     {
         Branca,
-        preta,
-        amarela,
-        azul,
-        vermelha,
-        verde,
-        laranja
+        Preta,
+        Amarela,
+        Azul,
+        Vermelha,
+        Verde,
+        Laranja
     }
 }
