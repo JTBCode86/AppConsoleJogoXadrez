@@ -62,6 +62,5 @@
         public abstract bool[,] movimentosPossiveis();
 
         #endregion
-
     }
 }

@@ -51,7 +51,9 @@ namespace AppConsoleJogoXadrez
 
                 Console.Clear();
                 Tela.imprimirPartida(partida);
-                Console.ReadLine(); // Incluido para travar a tela.
+
+                // Incluido para travar a tela.
+                Console.ReadLine(); 
             }
             catch (TabuleiroException e)
             {

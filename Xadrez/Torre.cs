@@ -20,7 +20,6 @@ namespace Xadrez
         {
             Peca p = tab.peca(pos);
             return p == null || p.cor != this.cor;
-
         }
 
         public override bool[,] movimentosPossiveis() 
